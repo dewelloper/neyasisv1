@@ -1,7 +1,33 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title #{title} Neyasis TECHNOLOGY
+    block scripts
+      script(src='/javascripts/site.js')    
+    block style
+      link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    .flex-container
+      header
+        h1 Neyasiss
+      nav.nav
+        ul
+          li
+            a(href='/index') Ana Sayfa        
+          li
+            a(href='/services') Hizmetlerimiz
+          li
+            a(href='#') Referanslarımız
+          li
+            a(href='/career') Kariyer
+          li
+            a(href='#') İletişim   
+
+      .concontainer
+        .subconcontainer
+          block subconcontainer
+        .sidebar
+          block sidebar
+
+      footer Copyright © NEYASİS TECHNOLOGY 2016 TÜM HAKLARI SAKLIDIR
+block scriptsEnd

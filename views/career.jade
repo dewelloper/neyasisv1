@@ -1,0 +1,23 @@
+extend layout
+block scripts
+    script(src='https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js')
+block style
+    link(rel='stylesheet', href='/stylesheets/simplemde.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    
+
+block subconcontainer
+  textarea#mytextarea(style='width:500px;height:200px;')
+    
+block sidebar
+  .widgets
+    h1 editor for this page
+
+block scriptsEnd
+    script(src='https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js')
+    script(src='/javascripts/careercontent.js')
+
+
+
+
+    
